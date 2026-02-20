@@ -1,0 +1,30 @@
+variable "alarm_name" {}
+variable "create_cw_alarm" {}
+variable "sns_topic_arn" {}
+variable "cw_alarm_description" {}
+variable "cw_comparison_operator" {}
+variable "cw_threshold" {}
+variable "cw_evaluation_periods" {}
+variable "cw_period" {}
+variable "cw_namespace" {}
+variable "cw_metric_name" {}
+variable "cw_statistic" {}
+variable "load_balancer_arn_suffix" {}
+variable "target_group_arn_suffix" {}
+variable "autoscaling_group_name" {}
+
+
+variable "asg_status_alarm_name" {}
+variable "asg_status_create_cw_alarm" {}
+variable "asg_status_sns_topic_arn" {}
+variable "asg_status_cw_alarm_description" {}
+variable "asg_status_cw_comparison_operator" {}
+variable "asg_status_cw_threshold" {}
+variable "asg_status_cw_evaluation_periods" {}
+variable "asg_status_cw_period" {}
+variable "asg_status_cw_namespace" {}
+variable "asg_status_cw_metric_name" {}
+variable "asg_status_cw_statistic" {}
+variable "asg_status_load_balancer_arn_suffix" {}
+variable "asg_status_target_group_arn_suffix" {}
+variable "asg_status_autoscaling_group_name" {}
