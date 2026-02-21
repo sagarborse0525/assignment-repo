@@ -178,11 +178,11 @@ is_alb_deletion_protection_enabled    = true
 alb_tags                              = {}
 
 #ALB Listener Values
-lb_listener_ports           = [80]
-listener_protocol        = ["HTTP"]
+lb_listener_ports           = [443]
+listener_protocol        = ["HTTPS"]
 action_type              = "forward"
-listener_ssl_policy      = null #"ELBSecurityPolicy-2016-08"
-listener_certificate_arn = null #"arn:aws:iam::187416307283:server-certificate/test_cert_rab3wuqwgja25ct3n4jdj2tzu4" # acm certificate arn
+listener_ssl_policy      = "ELBSecurityPolicy-2016-08"
+listener_certificate_arn = "arn:aws:iam::187416307283:server-certificate/test_cert_rab3wuqwgja25ct3n4jdj2tzu4" # acm certificate arn
 
 #ALB Target Group Values
 
@@ -245,4 +245,5 @@ asg_status_autoscaling_group_name = null
 asg_status_load_balancer_arn_suffix      = null
 asg_status_target_group_arn_suffix       = null
 asg_status_sns_topic_arn = "arn:aws:sns:us-east-1:608698602459:test"
+
 
